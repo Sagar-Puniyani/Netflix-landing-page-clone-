@@ -1,20 +1,17 @@
 # Netflix-landing-page-clone-
 
 In The Repo  
-I am Going To add TO templates which will really makes Effect in the Web app development and 
+I am Going To add templates which will really makes Effect in the Web app development and 
 This series is going to so long 
 
 That is the webpage of having clone of Netflix website.
 
-Then , it is going to some of the newly build template in next some repo's.
-
+Some newly template will be added in future.
 
 HTML and CSS are the backbone of the modern web. HTML provides the structure and 
 content of web pages, while CSS adds style and visual appeal. Together, these two 
 technologies allow developers and designers to create beautiful, interactive, and 
 engaging websites.
-
-2 / 2
 
 HTML and CSS are the building blocks of the modern web, providing the foundation for
 the vast majority of websites and online applications. HTML (Hypertext Markup Language)
