@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #bd0001;
+    color: white;
+    margin-left: 10px;
+    padding: 7px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.language-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.language-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.language-btn i {
+    margin-right: 10px;
+}
+
+.header-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.header-content p {
+    font: bold;
+}
+
+.email-Signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.email-Signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-Signup button {
+    background-color: #bd0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/* This the styling of features */
+.feature {
+    padding: 30px 12%;
+    font-size: 25px;
+}
+
+.row {
+    border: 4mm ridge rgba(53, 53, 47, 0.6);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+
+.text-col h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+
+.img-col img {
+    width: 90%;
+    margin: auto;
+}
+
+/* This is the styling for faq */
+
+.faq {
+    border-top: 4mm ridge rgba(53, 53, 47, 0.6);
+    border-bottom: 4mm ridge rgba(53, 53, 47, 0.6);
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+.faq h2{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    transition: 0.4s;
+}
+
+.accordion li {
+    list-style: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.accordion li label {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    background-color: #303030;
+    position: relative;
+    margin-bottom: 4px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+label::after ,label::before{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.content {
+    display: block;
+    background-color: #303030;
+    text-align: left;
+    padding: 0 12px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 700px;
+    padding: 20px 30px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(-45deg);
+}
+
+
+
+.faq small {
+    font-size: 20px;
+    font: bold;
+}
+
+/* this is styling in footer  */
+
+.footer {
+    padding: 50px 10% 12px;
+    color: #777;
+}
+
+.footer h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-row .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 35px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.footer-row {
+    align-items: flex-start;
+    padding: 10px 1%;
+}
+
+.footer .language-btn {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-txt {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+/* ------media query for small screen ---------- */
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    nav .language-btn {
+        padding: 4px 8px;
+    }
+
+    .header-content {
+        position: unset;
+        transform: none;
+        margin-top: 190px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .email-Signup button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .text-col,.img-col{
+        flex-basis: 100%;
+    }
+    .feature h2{
+        font-size: 30px;
+    }
+    .feature p{
+        font-size: 15px;
+    }
+    .row:nth-child(2) , .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .row{
+        padding: 10px 5px ;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordion{
+        font-size: 15px;
+    }
+    .accordion li  label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 20px;
+    }
+     .footer-row{
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-row:nth-child(3) , .footer-row:nth-child(4){
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
